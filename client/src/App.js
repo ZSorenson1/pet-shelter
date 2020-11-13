@@ -12,7 +12,7 @@ function App() {
         <Main path="/" />
         <PetInfo path="/pets/:id"  />
         <Update path="/pets/:id/edit" successCallback={ () => navigate("/")}/>
-        <Add path="/pets/add"/>
+        <Add path="/pets/add" successCallback={ () => navigate("/")}/>
       </Router>
     </div>
   );
